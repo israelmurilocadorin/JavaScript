@@ -1,21 +1,20 @@
-var a, b , c, x1, x2, delta, raizDelta;
-  
-a = Number(prompt(" Digite o valor de a: "));
-b = Number(prompt(" Digite o valor de b: "));
-c = Number(prompt(" Digite o valor de c: "));
+var a, b, c, delta, raiz_delta, x1, x2;
 
-delta = (( b ** b) -4 *a *c);
-alert(delta);
+a = Number(prompt("Digite um número"));
+b = Number(prompt("Digite um número"));
+c = Number(prompt("Digite um número"));
 
-if (delta < 0){
-  alert(" N�o existe solu��o ");
+delta = ((b**2) - 4 *a*c);
+
+console.log(delta);
+
+if (delta < 0) {
+console.log("Não existe solução nos reais");
 }
-else{
-  raizDelta = math.sqrt(delta);
-
-  alert(raizDelta);
-  x1 = (( -b +raizDelta )/2 *a);
-  x2 = (( -b -raizDelta )/2 *a);
-  alert(" Valor de x1:\n"+x1);
-  alert(" Valor de x2:\n"+x2);
+else {
+raiz_delta = Math.sqrt(delta);
+x1 = ((-b + raiz_delta) / 2*a);
+x2 = ((-b - raiz_delta) / 2*a);
+console.log("x1="+x1);
+console.log("x2="+x2);
 }
